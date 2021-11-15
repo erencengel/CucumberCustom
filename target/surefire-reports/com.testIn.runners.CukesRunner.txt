@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.testIn.runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.009 s - in com.testIn.runners.CukesRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.314 s <<< FAILURE! - in com.testIn.runners.CukesRunner
+User should not be able to login with unvalid credentials-2(Login functionality)  Time elapsed: 22.649 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...estyou.in/Login.aspx[A]> but was:<...estyou.in/Login.aspx[]>
+

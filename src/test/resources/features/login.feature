@@ -1,5 +1,5 @@
 Feature: Login functionality
-  @wip
+  @smoke
   Scenario: User should not be able to login with unvalid credentials
     Given User navigate to homepage
     When Enter invalid credentials

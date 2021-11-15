@@ -1,75 +1,24 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login2.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
 formatter.feature({
-  "name": "Login Functionality-2",
+  "name": "Login functionality",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "User should not be able to login with unvalid credentialsss",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip2"
-    }
-  ]
-});
-formatter.step({
-  "name": "User navigate to homepage",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "Enter invalid username as \"\u003cusername\u003e\" and password as \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "Click the login button",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "Verify that user could not login",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "a",
-        "a"
-      ]
-    },
-    {
-      "cells": [
-        "b",
-        "b"
-      ]
-    },
-    {
-      "cells": [
-        "c",
-        "c"
-      ]
-    }
-  ]
-});
 formatter.scenario({
-  "name": "User should not be able to login with unvalid credentialsss",
+  "name": "User should not be able to login with unvalid credentials-2",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@wip2"
+      "name": "@wip"
+    },
+    {
+      "name": "@db"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -85,18 +34,18 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter invalid username as \"a\" and password as \"a\"",
+  "name": "Enter invalid credentials - second one",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidUsernameAsAndPasswordAs(java.lang.String,java.lang.String)"
+  "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidCredentialsSecondOne()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
   "name": "Click the login button",
-  "keyword": "When "
+  "keyword": "Then "
 });
 formatter.match({
   "location": "com.testIn.stepdefs.LoginStepDefs.clickTheLoginButton()"
@@ -105,125 +54,18 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify that user could not login",
+  "name": "Verify that user could not login - second one",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.verifyThatUserCouldNotLogin()"
+  "location": "com.testIn.stepdefs.LoginStepDefs.verifyThatUserCouldNotLoginSecondOne()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c...estyou.in/Login.aspx[A]\u003e but was:\u003c...estyou.in/Login.aspx[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.testIn.stepdefs.LoginStepDefs.verifyThatUserCouldNotLoginSecondOne(LoginStepDefs.java:60)\r\n\tat ✽.Verify that user could not login - second one(file:///C:/Users/Eren/IdeaProjects/CucumberCustom/src/test/resources/features/login.feature:13)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "User should not be able to login with unvalid credentialsss",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User navigate to homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.userNavigateToHomepage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter invalid username as \"b\" and password as \"b\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidUsernameAsAndPasswordAs(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click the login button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.clickTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Verify that user could not login",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.verifyThatUserCouldNotLogin()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "User should not be able to login with unvalid credentialsss",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User navigate to homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.userNavigateToHomepage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter invalid username as \"c\" and password as \"c\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidUsernameAsAndPasswordAs(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click the login button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.clickTheLoginButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Verify that user could not login",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.testIn.stepdefs.LoginStepDefs.verifyThatUserCouldNotLogin()"
-});
-formatter.result({
   "status": "passed"
 });
 formatter.after({
