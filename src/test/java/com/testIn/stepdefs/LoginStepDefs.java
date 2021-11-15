@@ -2,7 +2,6 @@ package com.testIn.stepdefs;
 
 import com.testIn.pages.LoginPage;
 import com.testIn.utilities.ConfigurationReader;
-import com.testIn.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
