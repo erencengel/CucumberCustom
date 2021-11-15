@@ -44,10 +44,10 @@ public class LoginStepDefs {
 
     @When("Enter invalid credentials - second one")
     public void enterInvalidCredentialsSecondOne() {
-        loginPage.username.sendKeys("ccc");
-        loginPage.password.sendKeys("ddd");
+        loginPage.username.sendKeys("eren");
+        loginPage.password.sendKeys("eren");
         try {
-            Thread.sleep(3000);
+            Thread.sleep(15000);
         }catch (InterruptedException interruptedException){
             interruptedException.printStackTrace();
         }
@@ -55,7 +55,7 @@ public class LoginStepDefs {
 
     @Then("Verify that user could not login - second one")
     public void verifyThatUserCouldNotLoginSecondOne() {
-        String expectedUrl = "http://www.testyou.in/Login.aspxA";
+        String expectedUrl = "http://www.testyou.in/Login.aspx";
         String actualUrl = Driver.get().getCurrentUrl();
         Assert.assertEquals(expectedUrl,actualUrl);
 
