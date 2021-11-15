@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-14T20:54:18.848Z",
+        "start_timestamp": "2021-11-15T13:21:07.784Z",
         "before": [
           {
             "result": {
-              "duration": 7794000000,
+              "duration": 12193000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "User should not be able to login with unvalid credentialsss",
+        "line": 3,
+        "name": "User should not be able to login with unvalid credentials",
         "description": "",
-        "id": "login-functionality-2;user-should-not-be-able-to-login-with-unvalid-credentialsss;;2",
+        "id": "login-functionality;user-should-not-be-able-to-login-with-unvalid-credentials",
         "after": [
           {
             "result": {
-              "duration": 1247000000,
+              "duration": 1671000000,
               "status": "passed"
             },
             "match": {
@@ -31,11 +31,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2743000000,
+              "duration": 3389000000,
               "status": "passed"
             },
             "line": 4,
@@ -47,29 +47,19 @@
           },
           {
             "result": {
-              "duration": 3404000000,
+              "duration": 4065000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Enter invalid username as \"a\" and password as \"a\"",
+            "name": "Enter invalid credentials",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"a\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"a\"",
-                  "offset": 46
-                }
-              ],
-              "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidUsernameAsAndPasswordAs(java.lang.String,java.lang.String)"
+              "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidCredentials()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1426000000,
+              "duration": 2058000000,
               "status": "passed"
             },
             "line": 6,
@@ -77,11 +67,11 @@
             "match": {
               "location": "com.testIn.stepdefs.LoginStepDefs.clickTheLoginButton()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 54000000,
+              "duration": 128000000,
               "status": "passed"
             },
             "line": 7,
@@ -94,16 +84,30 @@
         ],
         "tags": [
           {
-            "name": "@wip2"
+            "name": "@wip"
+          },
+          {
+            "name": "@smoke"
           }
         ]
-      },
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
       {
-        "start_timestamp": "2021-11-14T20:54:35.757Z",
+        "start_timestamp": "2021-11-15T13:21:07.784Z",
         "before": [
           {
             "result": {
-              "duration": 2725000000,
+              "duration": 12270000000,
               "status": "passed"
             },
             "match": {
@@ -111,14 +115,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "User should not be able to login with unvalid credentialsss",
+        "line": 15,
+        "name": "User should not be able to login with unvalid credentialssss",
         "description": "",
-        "id": "login-functionality-2;user-should-not-be-able-to-login-with-unvalid-credentialsss;;3",
+        "id": "login-functionality-2;user-should-not-be-able-to-login-with-unvalid-credentialssss",
         "after": [
           {
             "result": {
-              "duration": 1146000000,
+              "duration": 1562000000,
               "status": "passed"
             },
             "match": {
@@ -127,14 +131,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1985000000,
+              "duration": 3446000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 16,
             "name": "User navigate to homepage",
             "match": {
               "location": "com.testIn.stepdefs.LoginStepDefs.userNavigateToHomepage()"
@@ -143,32 +147,22 @@
           },
           {
             "result": {
-              "duration": 3279000000,
+              "duration": 3933000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Enter invalid username as \"b\" and password as \"b\"",
+            "line": 17,
+            "name": "Enter invalid credentialss",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"b\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"b\"",
-                  "offset": 46
-                }
-              ],
-              "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidUsernameAsAndPasswordAs(java.lang.String,java.lang.String)"
+              "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidCredentialss()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1342000000,
+              "duration": 2219000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 18,
             "name": "Click the login button",
             "match": {
               "location": "com.testIn.stepdefs.LoginStepDefs.clickTheLoginButton()"
@@ -177,10 +171,10 @@
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 135000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 19,
             "name": "Verify that user could not login",
             "match": {
               "location": "com.testIn.stepdefs.LoginStepDefs.verifyThatUserCouldNotLogin()"
@@ -190,103 +184,7 @@
         ],
         "tags": [
           {
-            "name": "@wip2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-11-14T20:54:46.309Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3526000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.testIn.stepdefs.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "User should not be able to login with unvalid credentialsss",
-        "description": "",
-        "id": "login-functionality-2;user-should-not-be-able-to-login-with-unvalid-credentialsss;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 1070000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.testIn.stepdefs.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1811000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User navigate to homepage",
-            "match": {
-              "location": "com.testIn.stepdefs.LoginStepDefs.userNavigateToHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3266000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Enter invalid username as \"c\" and password as \"c\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"c\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"c\"",
-                  "offset": 46
-                }
-              ],
-              "location": "com.testIn.stepdefs.LoginStepDefs.enterInvalidUsernameAsAndPasswordAs(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1383000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Click the login button",
-            "match": {
-              "location": "com.testIn.stepdefs.LoginStepDefs.clickTheLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 66000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verify that user could not login",
-            "match": {
-              "location": "com.testIn.stepdefs.LoginStepDefs.verifyThatUserCouldNotLogin()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip2"
+            "name": "@smoke"
           }
         ]
       }

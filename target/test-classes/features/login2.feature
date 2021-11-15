@@ -10,3 +10,10 @@ Feature: Login Functionality-2
     |a       |a       |
     |b       |b       |
     |c       |c       |
+
+    @smoke
+    Scenario: User should not be able to login with unvalid credentialssss
+      Given User navigate to homepage
+      When Enter invalid credentialss
+      When Click the login button
+      Then Verify that user could not login

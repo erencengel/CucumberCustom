@@ -2,6 +2,7 @@ package com.testIn.stepdefs;
 
 import com.testIn.pages.LoginPage;
 import com.testIn.utilities.ConfigurationReader;
+import com.testIn.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -64,6 +65,17 @@ public class LoginStepDefs {
     public void enterInvalidUsernameAsAndPasswordAs(String arg0, String arg1) {
         loginPage.username.sendKeys(arg0);
         loginPage.password.sendKeys(arg1);
+        try {
+            Thread.sleep(3000);
+        }catch (InterruptedException interruptedException){
+            interruptedException.printStackTrace();
+        }
+    }
+
+    @When("Enter invalid credentialss")
+    public void enterInvalidCredentialss() {
+        loginPage.username.sendKeys("eee");
+        loginPage.password.sendKeys("fff");
         try {
             Thread.sleep(3000);
         }catch (InterruptedException interruptedException){
